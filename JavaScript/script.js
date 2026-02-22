@@ -4,23 +4,28 @@ function adicionarTarefa() {
 
     let texto = campoTarefa.value.trim();
 
-    // não permite vazio
     if (texto === "") return;
 
-    // verifica repetido
     let tarefas = lista.getElementsByTagName("li");
 
     for (let i = 0; i < tarefas.length; i++) {
         if (tarefas[i].textContent.toLowerCase() === texto.toLowerCase()) {
+
             campoTarefa.value = "";
             campoTarefa.placeholder = "Tarefa já existe!";
+
+            // ⬇ limpa placeholder depois de 2 segundos
+            setTimeout(() => {
+                campoTarefa.placeholder = "Adicionar tarefa";
+            }, 2000);
+
             return;
         }
     }
 
-    // adiciona se não existir
     let novaTarefa = document.createElement("li");
     novaTarefa.textContent = texto;
+
     lista.appendChild(novaTarefa);
 
     campoTarefa.value = "";
