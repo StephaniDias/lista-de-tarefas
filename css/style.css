@@ -1,0 +1,103 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7eb3, #7a5cff, #00d4ff);
+}
+
+/* Título */
+.titulo{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+/* Card principal */
+.interface{
+    width: 500px;
+    padding: 45px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+
+    color: white;
+}
+
+/* Form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input */
+form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Botões */
+button{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    background: linear-gradient(90deg, #ff4db8, #a64dff);
+    color: white;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Lista */
+ul{
+    margin-top: 20px;
+}
+
+ul li{
+    background: rgba(255,255,255,0.2);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.btn-vermelho{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+
+
+    background: #ff4d4d;
+    transition: 0.3s;
+}
+
+.btn-vermelho:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
